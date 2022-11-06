@@ -8,7 +8,7 @@ wget -P /home https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/verpweb > 
 	[[ "$vrs1" != "$vrs2" ]] && mv /home/verpweb /bin/ppweb/attpweb
 }
 [[ -e /home/verweb ]] && rm /home/verweb
-wget -P /home https://raw.githubusercontent.com/CoutySSH/SSH-WEB/main/verweb > /dev/null 2>&1
+wget -P /home https://raw.githubusercontent.com/detonaweb/MIN/main/verweb > /dev/null 2>&1
 [[ -f "/home/verweb" ]] && {
 	vrs3=$(sed -n '1 p' /bin/ppweb/verweb| sed -e 's/[^0-9]//ig')
     vrs4=$(sed -n '1 p' /home/verweb | sed -e 's/[^0-9]//ig')
